@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -49,51 +50,67 @@ body{
     background-color: gray;
 }
 
+.fundo {
+    width: 100%;
+    height: 1024px;
+    background-image: url(imagens/fundo1.jfif);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+.inicio{
+    margin: 72px 135px 2226px 135px;
+    
+    text-align: center;
+
+}
 .cabecalho{
-    width: 1171px;
     height: 39px;
-    align-items: center;
+    display: flex;
     justify-content: space-around;
 }
 .link-menu{
     font-size: 24px;
     color: #FFFFFF;
     font-weight: 500;
-    text-decoration: none;
-    margin-right: 128px;
     font-family: 'poppins';
-    
+    text-decoration: none;
 }
-
-.menu{
-    padding-top: 72px;
-    padding-left: 135px;
-    align-items: center;
+.ativo{
+    text-decoration: underline 2px;
+    text-decoration-color: hsl(0, 0%, 100%, 50%);
+    text-underline-offset: 10px;
 }
 .titulo{
-    width: 868px;
-    height: 144px;
-    margin-top: 209px;
-    margin-left: 286px;
-    text-align: center;
-}
-.menu-titulo{
+    font-family: 'poppins';
     font-size: 96px;
     color: #FFFFFF;
     font-weight: 700;
-    text-decoration: none;
-    font-family: 'poppins';
+    margin-top: 209px;
+    margin-right: 286px;
+    margin-left: 286px;
+    
 }
 .subtitulo{
-    width: 749px;
-    height: 72px;
     margin-top: 62px;
     margin-left: 346px;
-    text-align: center;
-}
-.menu-subtitulo{
+    margin-right: 346px;
     font-family: 'poppins';
     font-weight: 275;
-    color: #FFFFFF;
     font-size: 24px;
+    color: #FFFFFF;
+    
+}
+.botao{
+    padding: 13px 50px;
+    background-color: #00B43D;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'inter';
+    color: #FFFFFF;
+    border: 3px solid #FFFFFF;
+    border-radius: 8px;
+
 }
