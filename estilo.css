@@ -27,6 +27,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+
 }
 ol, ul {
     list-style: none;
@@ -48,15 +49,6 @@ table {
  
 body{
     background-color: gray;
-}
-
-.fundo {
-    width: 100%;
-    height: 1024px;
-    background-image: url(imagens/fundo1.jfif);
-    background-size: cover;
-    background-position: center;
-    
 }
 
 
