@@ -48,20 +48,74 @@ table {
  
  
 body{
-    background-color: gray;
+    position: relative;
+    margin: 0;
+    height: 100vh; /* Ocupa toda a tela */
 }
 
+.fundo1{
+    background-image: url(imagens/fundo1.jfif);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    position: relative;
+    
+    
+}
+.fundo1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35); /* Cor branca com 50% de opacidade */
+}
+.fundo2{
+    background-image: url(imagens/fundo2.jfif);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+.fundo2::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35); /* Cor branca com 50% de opacidade */
+}
+.fundo3{
+    background-image: url(imagens/fundo3.jfif);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+.fundo3::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35); /* Cor branca com 50% de opacidade */
+}
 
 .inicio{
-    margin: 72px 135px 2226px 135px;
+    padding-top: 72px;
+    margin-right: 135px;
+    margin-left: 135px;
+    margin-bottom: 180px;
     
-    text-align: center;
-
 }
 .cabecalho{
     height: 39px;
     display: flex;
     justify-content: space-around;
+    position: relative;
 }
 .link-menu{
     font-size: 24px;
@@ -83,6 +137,8 @@ body{
     margin-top: 209px;
     margin-right: 286px;
     margin-left: 286px;
+    text-align: center;
+    position: relative;
     
 }
 .subtitulo{
@@ -93,16 +149,117 @@ body{
     font-weight: 275;
     font-size: 24px;
     color: #FFFFFF;
+    text-align: center;
+    position: relative;
+    
     
 }
 .botao{
-    padding: 13px 50px;
+    padding: 16px 69px;
     background-color: #00B43D;
     display: inline-block;
     text-decoration: none;
     font-family: 'inter';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
     color: #FFFFFF;
     border: 3px solid #FFFFFF;
     border-radius: 8px;
-
+    
 }
+.lugar-botao{
+    position: absolute;
+    bottom: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.pergunta{
+    font-family: 'poppins';
+    font-size: 40px;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding-top: 152px;
+    margin-left: 530px;
+    margin-right: 530px;
+    text-align: center;
+    position: relative;
+}
+.flex{
+    margin-left: 44px;
+    margin-right: 44px;
+    margin-top: 54px;
+    display: flex;
+    justify-content: space-around;
+}
+.lugares{
+    width: 320px;
+    height: 586px;
+    background-color: rgba(88, 88, 88, 1);
+    position: relative;
+}
+.imagem{
+    width: 272px;
+    height: 252px;
+    margin-top: 24px;
+    margin-left: 24px;
+}
+.titulo-imagem{
+    font-family: 'poppins';
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 17px;
+    margin-left: 24px;
+    color: #FFFFFF;
+}
+.texto-imagem{
+    font-family: 'poppins';
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 6px;
+    margin-left: 24px;
+    margin-right: 71px;
+    color: #FFFFFF;
+}
+.botao-imagem{
+    font-family: 'inter';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding: 6px 25px 5px 17px;
+    background-color: #4E4E4E;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    
+}
+.lugar-botao2{
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+}
+.ativo2{
+    background-color: rgba(17, 0, 0, 0.45);
+}
+.sobre{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 48px;
+    color: #FFFFFF;
+    padding-top: 161px;
+    padding-left: 120px;
+    position: relative;
+}
+.texto{
+    font-family: 'Poppins';
+    font-weight: 275;
+    font-size: 32px;
+    color: #FFFFFF;
+    margin-top: 64px;
+    margin-left: 120px;
+    margin-right: 115px;
+    line-height: 50px;
+    position: relative;
+}
+
